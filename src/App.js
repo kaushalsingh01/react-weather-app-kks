@@ -56,7 +56,7 @@ function App() {
     return `${dd} ${monthNames[mm - 1]} ${yyyy}`;
   };
   const getWeatherIcon = (weather) => {
-    const weatherMain = weather?.toLowerCase(); 
+    const weatherMain = weather?.toLowerCase();
 
     switch (weatherMain) {
       case 'clear':
@@ -215,21 +215,21 @@ function App() {
 
                 <div className="con-card">
                   <div className="date">
-                    <p>{convertUnixDatestamp(data.list[7].dt)}</p>
+                    <p>{convertUnixDatestamp(data.list[8].dt)}</p>
                   </div>
                   <div className="card">
                     <div className="day-wea">
-                      <img src={getWeatherIcon(data.list[7].weather[0].main)} alt={data.list[7].weather[0].main} />
-                      <p>{data.list[7].weather[0].main}</p>
+                      <img src={getWeatherIcon(data.list[8].weather[0].main)} alt={data.list[8].weather[0].main} />
+                      <p>{data.list[8].weather[0].main}</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[7].main.temp_max)}°C/{Math.round(data.list[7].main.temp_max)}°F</p>
+                      <p>{tempChanger(data.list[8].main.temp_max)}°C/{Math.round(data.list[8].main.temp_max)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[7].main.temp_min)}°C/{Math.round(data.list[9].main.temp_min)}°F</p>
+                      <p>{tempChanger(data.list[10].main.temp_min)}°C/{Math.round(data.list[10].main.temp_min)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{data.list[7].main.humidity}%</p>
+                      <p>{data.list[8].main.humidity}%</p>
                     </div>
                     <div className="wea-detail">
                       <p>{convertUnixTimestamp(data.city.sunrise)}</p>
@@ -243,21 +243,21 @@ function App() {
 
                 <div className="con-card">
                   <div className="date">
-                    <p>{convertUnixDatestamp(data.list[10].dt)}</p>
+                    <p>{convertUnixDatestamp(data.list[11].dt)}</p>
                   </div>
                   <div className="card">
                     <div className="day-wea">
-                      <img src={getWeatherIcon(data.list[10].weather[0].main)} alt={data.list[10].weather[0].main} />
-                      <p>{data.list[10].weather[0].main}</p>
+                      <img src={getWeatherIcon(data.list[11].weather[0].main)} alt={data.list[11].weather[0].main} />
+                      <p>{data.list[11].weather[0].main}</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[10].main.temp_max)}°C/{Math.round(data.list[10].main.temp_max)}°F</p>
+                      <p>{tempChanger(data.list[11].main.temp_max)}°C/{Math.round(data.list[11].main.temp_max)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[10].main.temp_min)}°C/{Math.round(data.list[12].main.temp_min)}°F</p>
+                      <p>{tempChanger(data.list[13].main.temp_min)}°C/{Math.round(data.list[13].main.temp_min)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{data.list[10].main.humidity}%</p>
+                      <p>{data.list[11].main.humidity}%</p>
                     </div>
                     <div className="wea-detail">
                       <p>{convertUnixTimestamp(data.city.sunrise)}</p>
@@ -270,21 +270,21 @@ function App() {
 
                 <div className="con-card">
                   <div className="date">
-                    <p>{convertUnixDatestamp(data.list[18].dt)}</p>
+                    <p>{convertUnixDatestamp(data.list[19].dt)}</p>
                   </div>
                   <div className="card">
                     <div className="day-wea">
-                      <img src={getWeatherIcon(data.list[18].weather[0].main)} alt={data.list[18].weather[0].main} />
-                      <p>{data.list[18].weather[0].main}</p>
+                      <img src={getWeatherIcon(data.list[19].weather[0].main)} alt={data.list[19].weather[0].main} />
+                      <p>{data.list[19].weather[0].main}</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[18].main.temp_max)}°C/{Math.round(data.list[18].main.temp_max)}°F</p>
+                      <p>{tempChanger(data.list[19].main.temp_max)}°C/{Math.round(data.list[19].main.temp_max)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[18].main.temp_min)}°C/{Math.round(data.list[20].main.temp_min)}°F</p>
+                      <p>{tempChanger(data.list[21].main.temp_min)}°C/{Math.round(data.list[21].main.temp_min)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{data.list[18].main.humidity}%</p>
+                      <p>{data.list[19].main.humidity}%</p>
                     </div>
                     <div className="wea-detail">
                       <p>{convertUnixTimestamp(data.city.sunrise)}</p>
@@ -297,21 +297,21 @@ function App() {
 
                 <div className="con-card">
                   <div className="date">
-                    <p>{convertUnixDatestamp(data.list[26].dt)}</p>
+                    <p>{convertUnixDatestamp(data.list[27].dt)}</p>
                   </div>
                   <div className="card">
                     <div className="day-wea">
-                      <img src={getWeatherIcon(data.list[26].weather[0].main)} alt={data.list[26].weather[0].main} />
+                      <img src={getWeatherIcon(data.list[27].weather[0].main)} alt={data.list[27].weather[0].main} />
                       <p>{data.list[26].weather[0].main}</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[26].main.temp_max)}°C/{Math.round(data.list[26].main.temp_max)}°F</p>
+                      <p>{tempChanger(data.list[27].main.temp_max)}°C/{Math.round(data.list[27].main.temp_max)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{tempChanger(data.list[26].main.temp_min)}°C/{Math.round(data.list[28].main.temp_min)}°F</p>
+                      <p>{tempChanger(data.list[29].main.temp_min)}°C/{Math.round(data.list[29].main.temp_min)}°F</p>
                     </div>
                     <div className="wea-detail">
-                      <p>{data.list[26].main.humidity}%</p>
+                      <p>{data.list[27].main.humidity}%</p>
                     </div>
                     <div className="wea-detail">
                       <p>{convertUnixTimestamp(data.city.sunrise)}</p>
